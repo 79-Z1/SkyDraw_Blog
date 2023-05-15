@@ -2,10 +2,12 @@
 const express = require('express');
 const acessController = require('../../controllers/acess.controller');
 const homeController = require('../../controllers/home.controller');
+const adminController = require('../../controllers/admin.controller');
 const { errorHandler } = require('../../middlewares/error.middleware');
 const postController = require('../../controllers/post.controller');
 const router = express.Router();
 
+router.get('/admin', adminController.showHome);
 router.get('/blog/signup', acessController.showSignUp);
 router.get('/blog/login', acessController.showLogIn);
 router.get('/post', postController.showCreatePage);
