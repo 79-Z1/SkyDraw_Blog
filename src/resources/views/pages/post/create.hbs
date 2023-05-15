@@ -1,0 +1,70 @@
+<link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet" />
+<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+
+<div class="form-style form-style-four">
+	<div class="row">
+		<div class="col-lg">
+			<div class="form-input mt-5 container d-flex justify-content-center">
+				<form action="#" enctype="multipart/form-data" style="width: 550px;">
+					<div class="mb-3">
+						<label for="tieuDe" class="form-label">Tiêu đề:</label>
+						<input class="form-control" id="tieuDe">
+					</div>
+					<div class="mb-3">
+						<label for="anhMoTa" class="form-label">Ảnh mô tả:</label>
+						<input type="file" class="form-control" id="anhMoTa">
+					</div>
+					<div class="mb-3">
+						<label for="categories">Thể loại:</label>
+						<div class="d-flex flex-wrap align-items-center" id="categories">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="lapTrinh">
+								<label class="form-check-label" for="lapTrinh">
+									Lập trình
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="kinhTe">
+								<label class="form-check-label" for="kinhTe">
+									Kinh tế
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="duLich">
+								<label class="form-check-label" for="duLich">
+									Du lịch
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="ngoaiNgu">
+								<label class="form-check-label" for="ngoaiNgu">
+									Ngoại ngữ
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="theThao">
+								<label class="form-check-label" for="theThao">
+									Thể thao
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="khac">
+								<label class="form-check-label" for="khac">
+									Khác
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="mb-3">
+						<label for="anhMoTa" class="form-label" for="editor">Nội dung:</label>
+						<div id="editor"></div>
+					</div>
+				</form>
+			</div>
+			<!-- form input -->
+		</div>
+
+	</div>
+	<!-- row -->
+</div>
+<!-- form-style -->

@@ -1,0 +1,36 @@
+.form-check {
+    margin-right: 10px;
+}
+
+
+
+.post-thumb {
+    height: 275px;
+    object-fit: scale-down;
+    width: 100%;
+}
+
+.user-avatar {
+    width: 32px; 
+    height: 32px; 
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+p {
+    margin: 0;
+    font-size: 1.5rem !important;
+}
+
+.prefix {
+    color: #17171799;
+}
+
+.react-container .bi {
+    font-size: 17px;
+}
+
+.react-container .bi,
+.react-container span {
+    padding: 5px;
+}

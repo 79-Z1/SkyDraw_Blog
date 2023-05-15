@@ -1,0 +1,92 @@
+<div class="banner container2"></div>
+<div class="d-flex container2 justify-content-between">
+    {{!--/// LEFTBAR START --}}
+    <div style="width:240px;padding: 16px;" class="left-bar">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <a href=""><i class="bi bi-file-code me-2 "></i>Công nghệ</a>
+            </li>
+            <li class="list-group-item">
+                <a href=""><i class="bi bi-mortarboard me-2"></i>Học tập</a>
+            </li>
+            <li class="list-group-item">
+                <a href=""><i class="bi bi-book me-2"></i>Văn học</a>
+            </li>
+            <li class="list-group-item">
+                <a href=""><i class="bi bi-gender-trans me-2"></i>Sinh học</a>
+            </li>
+            <li class="list-group-item">
+                <a href=""><i class="bi bi-yin-yang me-2"></i>Đời sống</a>
+            </li>
+        </ul>
+    </div>
+    {{!--/// LEFTBAR END --}}
+
+    {{!--/// MAIN CONTENT START --}}
+    <main style="width: 650px;">
+        {{#each posts}}
+        <div class="card">
+            <img src="/imgs/male-profile.png" class="card-img-top post-thumb" alt="post thumb">
+            <ul class="list-group list-group-flush" style="border: none;">
+                <li class="list-group-item d-flex align-items-center">
+                    <div>
+                        <img src="/imgs/male-profile.png" alt="" class="user-avatar">
+                    </div>
+                    <div>
+                        <p style="font-size: 14px;"><b>
+                                {{#with User}} {{dataValues.username}} {{/with}}</b>
+                        </p>
+                        <p style="14px">{{ this.dataValues.updated_at }}</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="card-body pt-0">
+                <p class="card-title" style="font-size: 20px;">
+                    <b>{{ this.dataValues.title }}</b>
+                </p>
+                <div class="mb-2">
+                    {{#each Categories}}
+                    <a href="" style="padding: 4px 7px; color: #404040;">
+                        <span class="prefix">#</span>{{this.dataValues.name}}
+                    </a>
+                    {{/each}}
+                </div>
+                <div>
+                    <div class="d-flex align-items-center react-container">
+                        <i class="bi bi-hand-thumbs-up" style="cursor: pointer"></i>
+                        <span>like</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{/each}}
+    </main>
+    {{!--/// MAIN CONTENT END --}}
+
+    {{!--/// RIGHTBAR START --}}
+    <div style="width: 325px;padding: 16px;">
+        <h3>Top Ranking</h3>
+        <ol class="list-group list-group-numbered">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div class="ms-2 me-auto d-flex align-items-center">
+                    <img src="/imgs/male-profile.png" class="user-avatar2" alt="">Cras justo odio
+                </div>
+                <span class="badge bg-primary rounded-pill">14</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div class="ms-2 me-auto d-flex align-items-center">
+                    <img src="/imgs/male-profile.png" class="user-avatar2" alt="">Cras justo odio
+                </div>
+                <span class="badge bg-primary rounded-pill">14</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div class="ms-2 me-auto d-flex align-items-center">
+                    <img src="/imgs/male-profile.png" class="user-avatar2" alt="">Cras justo odio
+                </div>
+                <span class="badge bg-primary rounded-pill">14</span>
+            </li>
+        </ol>
+    </div>
+    {{!--/// RIGHTBAR END --}}
+</div>
